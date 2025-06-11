@@ -23,9 +23,19 @@ Data Source: Enterprise DNA
 
 ### Progression of Analysis:
 
-I had broken down the analysis into finding answers to certain questions I formed. Such questions and related analysis will unfold below.
+I had broken down the analysis into finding answers to certain questions. Such questions and related analysis will unfold below.
 I have also given the steps followed or codes used to develop the related visualizations in Power BI.
 
 ### Q1. What is the trend of sales?
 
+![1  Sales Trend](https://github.com/user-attachments/assets/f84cb91f-72fc-4385-b0a9-2e6c2dfbda78)
+
+1. Total sales around 8.5K. sales value wise almost 74% consists of Clothing, 18% Ornaments and 7% Other. But quantity wise only 49% is Clothing, 31% Ornaments and 20% Other. Thus it is obvious that Clothings are highly prices compared to Ornaments and Other.
+2. There is almost no diffrence in average sales volume over weekdays or weekends.
+3. Top selling months were May and July followed by December and March. However, June has the deepest slump between two high grossing months.
+
+DAX used:
+1. Sales last Month = CALCULATE([Total],DATEADD('Calendar'[Month],-1,MONTH))
+2. Total = SUM(Data[Total Sales])
+3. % Change over Last Month = if ([Sales last Month]<>0, ([Total] - [Sales last Month]) / [Sales last Month] , 0)
 
