@@ -56,6 +56,7 @@ Findings:
 *DAX used:*
 
 *1. % Change in Clothing Sales over last month = IF([Sales last Month]<>0, CALCULATE(([Total] - [Sales last Month]) / [Sales last Month],Data[Product Category]="Clothing"),0)*
+
     *- Same as above for Ornaments and Other.*
     
 *2. % Change over Last Month = if ([Sales last Month]<>0, ([Total] - [Sales last Month]) / [Sales last Month] , 0)*
