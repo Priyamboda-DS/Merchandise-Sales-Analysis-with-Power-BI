@@ -37,8 +37,11 @@ Findings:
 3. Top selling months were May and July followed by December and March. However, June has the deepest slump between two high grossing months.
 
 *DAX used:*
+
 *1. Sales last Month = CALCULATE([Total],DATEADD('Calendar'[Month],-1,MONTH))*
+
 *2. Total = SUM(Data[Total Sales])*
+
 *3. % Change over Last Month = if ([Sales last Month]<>0, ([Total] - [Sales last Month]) / [Sales last Month] , 0)*
 
 ### Q2. How are the performance of each product categories?
@@ -51,8 +54,10 @@ Findings:
 2. Total sales follows the trend of sales as Clothing.
 
 *DAX used:*
+
 *1. % Change in Clothing Sales over last month = IF([Sales last Month]<>0, CALCULATE(([Total] - [Sales last Month]) / [Sales last Month],Data[Product Category]="Clothing"),0)*
     *- Same as above for Ornaments and Other.*
+    
 *2. % Change over Last Month = if ([Sales last Month]<>0, ([Total] - [Sales last Month]) / [Sales last Month] , 0)*
 
 ### What is the impact of price on sales?
