@@ -77,3 +77,23 @@ Findings:
 
 1. The product Clothing-BF1548 has highest amount of sales with medium price in the Clothing product category. It also has a medium average rating within its product category!
 2. The product category Other has obtained the highest average rating and the maximum percentage of 'Good' ratings, although, there is no significant difference in the ratings received across all categories.
+
+*DAX used:*
+
+*1. % Good Rating = CALCULATE(DISTINCTCOUNT(Data[Order ID]),Data[Rating]>3)/DISTINCTCOUNT(Data[Order ID])*
+
+*2. % Neutral Rating = CALCULATE(DISTINCTCOUNT(Data[Order ID]),Data[Rating]=3)/DISTINCTCOUNT(Data[Order ID])*
+
+*3. % Bad Rating = CALCULATE(DISTINCTCOUNT(Data[Order ID]),Data[Rating]<3)/DISTINCTCOUNT(Data[Order ID])*
+
+### What is the total sales by order location?
+
+![5  Total Sales by Order Location](https://github.com/user-attachments/assets/688d444f-d639-4b88-9fc4-78031c212c7e)
+
+Findings:
+
+1. The city Sydney provides the maximum revenue from sales in all product categories.
+2. However, if looked into each product categories separately, different cities come out as leaders.
+
+![image](https://github.com/user-attachments/assets/7be8db56-600a-4904-8537-f22ee6165c0d)
+
