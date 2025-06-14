@@ -95,5 +95,8 @@ Findings:
 1. The city Sydney provides the maximum revenue from sales in all product categories.
 2. However, if looked into each product categories separately, different cities come out as leaders.
 
-![image](https://github.com/user-attachments/assets/7be8db56-600a-4904-8537-f22ee6165c0d)
+![5c  Other Sales by Order Location](https://github.com/user-attachments/assets/d146dcb5-90a9-44b9-8c99-8aae0fb9eb6e)
+![5b  Ornaments Sales by Order Location](https://github.com/user-attachments/assets/0953f254-11d4-4233-aa0a-7f494afcfe6d)
+![5a  Clothing Sales by Order Location](https://github.com/user-attachments/assets/f2572ec2-a92d-4612-9cc6-3640946aa9c5)
+
 
