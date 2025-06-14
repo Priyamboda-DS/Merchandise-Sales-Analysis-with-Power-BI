@@ -93,10 +93,14 @@ Findings:
 Findings:
 
 1. The city Sydney provides the maximum revenue from sales in all product categories.
-2. However, if looked into each product categories separately, different cities come out as leaders.
+   Sydney is an overseas location, hence steep amount of shipping charges is applicable, which actually contributes to this high revenue it provides.
+   However, if the net sales, which is the total revenue - Shipping Charges, is looked upon, the picture entirely changes; the inland cities now come out as leaders.
 
-![5c  Other Sales by Order Location](https://github.com/user-attachments/assets/d146dcb5-90a9-44b9-8c99-8aae0fb9eb6e)
-![5b  Ornaments Sales by Order Location](https://github.com/user-attachments/assets/0953f254-11d4-4233-aa0a-7f494afcfe6d)
-![5a  Clothing Sales by Order Location](https://github.com/user-attachments/assets/f2572ec2-a92d-4612-9cc6-3640946aa9c5)
+![5  Net Sales by Order Location](https://github.com/user-attachments/assets/e6f6abb1-1dbb-4f71-8d41-059cbc623b0d)
+
+
+
+
+
 
 
