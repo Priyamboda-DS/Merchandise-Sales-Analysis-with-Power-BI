@@ -69,5 +69,11 @@ Findings:
 
 1. In this Price vs. Sales graph, the quantity sold and sales volumn- both have a downward trend with the increase in prices. The consumers seem to be quite price sensitive. 
 
+### What is the most popular product?
 
+![4  Product Popularity](https://github.com/user-attachments/assets/28ec02fb-bf86-4042-8424-6436668a95db)
 
+Findings:
+
+1. The product Clothing-BF1548 has highest amount of sales with medium price in the Clothing product category. It also has a medium average rating within its product category!
+2. The product category Other has obtained the highest average rating and the maximum percentage of 'Good' ratings, although, there is no significant difference in the ratings received across all categories.
