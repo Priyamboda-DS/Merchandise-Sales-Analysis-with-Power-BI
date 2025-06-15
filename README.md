@@ -104,11 +104,29 @@ Findings:
 
 Findings:
 
-1. The basket value, which is the average sales per order, is more in all product categories for overseas locations. This can be attributed to two things: i> high shipping charges which inflates the gross sales value by inflating the sales prices and ii> comparatively low number of orders from overseas locations.
+1. The basket value, which is the average sales per order, is higher in all product categories for overseas locations. This can be attributed to two things: i> high shipping charges which inflates the gross sales value by inflating the sales prices and ii> comparatively low number of orders from overseas locations.
 2. The impact of shipping charges on sales is evidently clear from the Proportion of Gross and Net Sale w.r.t. International Shipping visual. We see the proportion of Gross Sales for inland and overseas sales is 55%:45%. Whereas, this proportion changes to 70%:30% when considered the net sales only.
 3. From the last visual of Sales and Shipping Charges across international Locations, we find the 'Other' product catogory has the stippest Shipping Charges, as high as 90% to minimum 70% of the sales price depending on the overseas distance.
    This is followed by 'Ornaments'- almost 80% to 50% of sales prices and 'Clothing'- 53% to 22%.
    However, despite this humongous shipping charges, Sydney provides the highest revenue from sales. Sydney seems to hold quite a significant fan base for our Mr. Lee Chatmen!
 
-### 
+### What is the demographic profile of the buyers?
 
+![7  Demographic Profile of Buyers](https://github.com/user-attachments/assets/5e64bdd2-a21e-417a-b236-24032b34b408)
+
+Findings:
+
+1. The buyers are all youths, mostly falling in 20-34 age groups. Men are the primary buyers across all age groups.
+
+### How do ratings and reviews correlate with sales?
+
+![8  Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/e55cd6b3-3df7-4f0e-bd10-3f10fea319a9)
+
+Findings:
+
+1. The average sales is more or less same across ratings.
+2. I have drawn a line chart of the average sales each month and the average ratings received till that month. However, as we see there is not much impact of ratings received on sales and this is trus for all product categories.
+
+![8a  Clothing_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/7b51532a-11c3-4695-a04d-6e7f1cf96ac8)
+![8b  Ornaments_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/636d2a13-48c3-44d3-b4f3-5e3ea248605a)
+![8c  Other_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/c3ea77cd-3d89-4387-844a-b11c5e43b7b1)
