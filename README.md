@@ -132,10 +132,11 @@ Findings:
 ![8c  Other_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/c3ea77cd-3d89-4387-844a-b11c5e43b7b1)
 
 3. Below are the WordCloud images of the customer reviews for the product category and international shipping yes/no combinations.
-4. Product category 'Clothing' and 'Ornaments' feature more negative words like 'delay' and 'lack'. Whereas, product category 'Other' shows some good words like 'major positives','excellent quality','great design', 'delivered quickly' etc.
+4. Product category 'Clothing' and 'Ornaments' feature more negative words like 'delay' and 'lack'. Whereas, product category 'Other' shows some good words like 'major positives','excellent quality','great design', 'delivered quickly' etc. This also corroborates with the highest %age of 'Good' rating this product category received over other product categories.
 
 ![WordCloudImage_removing delivery team and greatly appreciated](https://github.com/user-attachments/assets/d69f0157-7b86-4530-a85c-eff3dc39330b)
 
+5. The sentiment analysis of the review comments reveal the mean polarity values of all product categories range between 0.15 to 0.2, which indicates sentiments being slightly positive. 
 
-
+![image](https://github.com/user-attachments/assets/e7e6711d-e299-42a2-9ae1-b5af833d63b7)
 
