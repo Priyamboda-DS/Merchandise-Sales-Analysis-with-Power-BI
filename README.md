@@ -161,3 +161,16 @@ Findings:
 
 *1. Order frequency per week = (DISTINCTCOUNT(Data[Order ID])/(MAX(Data[Order Date]) - MIN(Data[Order Date])))*7*
 
+### Key Influencers:
+
+![image](https://github.com/user-attachments/assets/de55139f-c801-4e57-9004-9e4033147d62)
+![image](https://github.com/user-attachments/assets/52a7c7fe-fd15-4d4c-a1e3-70d25d219ac0)
+![image](https://github.com/user-attachments/assets/9807023f-9199-4966-bfd4-a26270e4573e)
+
+### Decomposition Tree:
+
+![image](https://github.com/user-attachments/assets/0d06ab55-ee45-403d-b79b-a70ecd6cbc17)
+
+
+
+
