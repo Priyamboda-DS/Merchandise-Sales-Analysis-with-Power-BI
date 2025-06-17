@@ -140,3 +140,16 @@ Findings:
 
 ![image](https://github.com/user-attachments/assets/e7e6711d-e299-42a2-9ae1-b5af833d63b7)
 
+### What is the trend in shipping charges?
+
+![9  Trend in Shipping Charges](https://github.com/user-attachments/assets/f85e4de5-485f-470e-b35e-e545965227e8)
+
+Findings:
+
+1. Shipping Charges are same for all product categories for a particular overseas location.
+2. The trend in sales and shipping charges over months are more or less flat.
+
+*DAX used:*
+
+*1. International Sales = CALCULATE(sum(Data[Total Sales]),Data[International Shipping]="Yes")*
+
