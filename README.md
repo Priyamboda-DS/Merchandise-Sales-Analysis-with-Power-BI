@@ -134,7 +134,9 @@ Findings:
 3. Below are the WordCloud images of the customer reviews for the product category and international shipping yes/no combinations.
 4. Product category 'Clothing' and 'Ornaments' feature more negative words like 'delay' and 'lack'. Whereas, product category 'Other' shows some good words like 'major positives','excellent quality','great design', 'delivered quickly' etc.
 
-![WordCloudImage](https://github.com/user-attachments/assets/6874ba74-9bb1-4d97-9578-59dd99290d40)
+![WordCloudImage](https://github.com/user-attachments/assets/f34e9afb-7c83-41a5-b70e-f047f1e68c70)
+![WordCloudImage](https://github.com/user-attachments/assets/f34e9afb-7c83-41a5-b70e-f047f1e68c70)
+
 
 
 
