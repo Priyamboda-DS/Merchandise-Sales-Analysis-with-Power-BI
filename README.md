@@ -136,7 +136,7 @@ Findings:
 
 ![WordCloudImage_removing delivery team and greatly appreciated](https://github.com/user-attachments/assets/d69f0157-7b86-4530-a85c-eff3dc39330b)
 
-5. The sentiment analysis of the review comments reveal the mean polarity values of all product categories range between 0.15 to 0.2, which indicates sentiments being slightly positive. 
+5. The sentiment analysis of the review comments reveal the mean polarity values of all product categories range between 0.15 to 0.2, which indicates sentiments being slightly positive, however not very optimistic. 
 
 ![image](https://github.com/user-attachments/assets/e7e6711d-e299-42a2-9ae1-b5af833d63b7)
 
