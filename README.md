@@ -21,7 +21,7 @@ Data Source: Enterprise DNA
 3. Changed the data type of 'Order Id' to text.
 4. Created a new calendar table comprising all dates between the earliest and latest 'Order Date'.
 
-### Progression of Analysis:
+### Analysis:
 
 I had broken down the analysis into finding answers to certain questions. Such questions and related analysis will unfold below.
 I have also given the steps followed or codes used to develop the related visualizations in Power BI.
@@ -130,3 +130,11 @@ Findings:
 ![8a  Clothing_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/7b51532a-11c3-4695-a04d-6e7f1cf96ac8)
 ![8b  Ornaments_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/636d2a13-48c3-44d3-b4f3-5e3ea248605a)
 ![8c  Other_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/c3ea77cd-3d89-4387-844a-b11c5e43b7b1)
+
+3. Below are the WordCloud images of the customer reviews for the product category and international shipping yes/no combinations.
+4. Product category 'Clothing' and 'Ornaments' feature more negative words like 'delay' and 'lack'. Whereas, product category 'Other' shows some good words like 'major positives','excellent quality','great design', 'delivered quickly' etc.
+
+![WordCloudImage](https://github.com/user-attachments/assets/6874ba74-9bb1-4d97-9578-59dd99290d40)
+
+
+
