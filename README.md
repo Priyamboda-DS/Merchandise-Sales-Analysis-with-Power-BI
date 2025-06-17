@@ -100,13 +100,17 @@ Findings:
 
 ### What is the impact of Shipping Charges on Sales?
 
-![6  Shipping Charges vs  Sales](https://github.com/user-attachments/assets/42dc2b52-c1ec-4486-b575-c1d58871001d)
+![11  Gross Sales, Net Sales and Shipping Charges](https://github.com/user-attachments/assets/b3f6bfb5-d5a2-42e1-b689-626a37d538b6)
 
 Findings:
 
-1. The basket value, which is the average sales per order, is higher in all product categories for overseas locations. This can be attributed to two things: i> high shipping charges which inflates the gross sales value by inflating the sales prices and ii> comparatively low number of orders from overseas locations.
-2. The impact of shipping charges on sales is evidently clear from the Proportion of Gross and Net Sale w.r.t. International Shipping visual. We see the proportion of Gross Sales for inland and overseas sales is 55%:45%. Whereas, this proportion changes to 70%:30% when considered the net sales only.
-3. From the last visual of Sales and Shipping Charges across international Locations, we find the 'Other' product catogory has the stippest Shipping Charges, as high as 90% to minimum 70% of the sales price depending on the overseas distance.
+1. The revenue is hugely inflated by Shipping Charges, however the net sales drops to almost half when shipping charges are deducted.
+
+![6  Shipping Charges vs  Sales](https://github.com/user-attachments/assets/42dc2b52-c1ec-4486-b575-c1d58871001d)
+
+2. The basket value, which is the average sales per order, is higher in all product categories for overseas locations. This can be attributed to two things: i> high shipping charges which inflates the gross sales value by inflating the sales prices and ii> comparatively low number of orders from overseas locations.
+3. The impact of shipping charges on sales is evidently clear from the Proportion of Gross and Net Sale w.r.t. International Shipping visual. We see the proportion of Gross Sales for inland and overseas sales is 55%:45%. Whereas, this proportion changes to 70%:30% when considered the net sales only.
+4. From the last visual of Sales and Shipping Charges across international Locations, we find the 'Other' product catogory has the stippest Shipping Charges, as high as 90% to minimum 70% of the sales price depending on the overseas distance.
    This is followed by 'Ornaments'- almost 80% to 50% of sales prices and 'Clothing'- 53% to 22%.
    However, despite this humongous shipping charges, Sydney provides the highest revenue from sales. Sydney seems to hold quite a significant fan base for our Mr. Lee Chatmen!
 
