@@ -140,7 +140,7 @@ Findings:
 
 ![image](https://github.com/user-attachments/assets/e7e6711d-e299-42a2-9ae1-b5af833d63b7)
 
-### What is the trend in shipping charges?
+### What are the trends in shipping charges?
 
 ![9  Trend in Shipping Charges](https://github.com/user-attachments/assets/f85e4de5-485f-470e-b35e-e545965227e8)
 
@@ -152,4 +152,12 @@ Findings:
 *DAX used:*
 
 *1. International Sales = CALCULATE(sum(Data[Total Sales]),Data[International Shipping]="Yes")*
+
+### Are there any patterns in repeat purchases?
+
+![10  Repeat Purchase](https://github.com/user-attachments/assets/617c71e5-9fcd-4470-98aa-d2a34b7908ee)
+
+*DAX used:*
+
+*1. Order frequency per week = (DISTINCTCOUNT(Data[Order ID])/(MAX(Data[Order Date]) - MIN(Data[Order Date])))*7*
 
