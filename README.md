@@ -1,4 +1,4 @@
-# Merchandise-Sales-Analysis-with-Power-BI
+# Merchandise Sales Analysis with Power BI and Python
 
 Lee Chatmen is a popular influencer from the United States with over 7 million TikTok followers. He became famous for his entertaining videos, where he plays popular songs on miniature guitars. In 2023, Lee launched his own line of merchandise. 
 
@@ -12,7 +12,10 @@ The data is in excel format with the following columns. There are 7394 rows of r
 
 Data Source: Enterprise DNA
 
-## Analysis, Steps followed and Codes used:
+## Key Findings:
+
+1. Total revenue is 856K in one year, mostly driven by product category 'Clothing' which consists of 75% of total revenue.
+2. 
 
 ### Initial Steps:
 
@@ -100,7 +103,7 @@ Findings:
 
 ### What is the impact of Shipping Charges on Sales?
 
-![11  Gross Sales, Net Sales and Shipping Charges](https://github.com/user-attachments/assets/b3f6bfb5-d5a2-42e1-b689-626a37d538b6)
+![image](https://github.com/user-attachments/assets/4f4b9383-692c-4bba-9be4-746dd162a477)
 
 Findings:
 
