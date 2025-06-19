@@ -1,10 +1,13 @@
 # Merchandise Sales Analysis with Power BI and Python
 
+
 Lee Chatmen is a popular influencer from the United States with over 7 million TikTok followers. He became famous for his entertaining videos, where he plays popular songs on miniature guitars. In 2023, Lee launched his own line of merchandise. 
 
 This analysis looks at how his merchandise sales are going and what we can learn from the data.
 
+
 ## Data Description:
+
 
 The data is in excel format with the following columns. There are 7394 rows of records. The data is pretty clean without any value error or any missing values.
 
@@ -12,32 +15,38 @@ The data is in excel format with the following columns. There are 7394 rows of r
 
 Data Source: Enterprise DNA
 
+
 ## Key Findings:
 
-1. Total revenue is 856K in one year, mostly driven by product category 'Clothing' which consists of 75% of total revenue.
-2. 
 
-### Initial Steps:
+1. Total revenue is 856K in one year, mostly driven by product category 'Clothing' which consists of 75% of total revenue.
+2. Owing to the steep shipping charges, on average, the overseas consumers pay almost double the price as compared to domestic cunsumers. This difference in price brings down the order volume in overseas locations.
+3. Despite this high price, almost 45% of revenue comes from overseas sales. This can be attributed to the popularity and fan base of Mr. Lee Chatmen as well as the unique design and quality of the products. The proprieters may consider local procurement maintaining the quality and design of the products to beat low order volume in overseas locations. 
+4. The buyers are primarily youngsters in 20 to 35 age range.
+5. Ratings and reviews do not have much impact on sales. Consumers have praised the quality and design of products but complained about delays in delivery and lack of care in handling. Overall sentiment of customer reviews are positive but not very optimistic.
+
+
+### Analysis:
+
+
+I had broken down the analysis into finding answers to certain questions. Such questions and related analysis will unfold below.
+The visualizations to support the analysis and key DAX functions used to develop such visualizations in Power BI are also given there.
+
+
+#### Initial Steps:
+
 
 1. Loaded the data to Power BI.
 2. Verified the data for any possible data type error or missing values. There were none.
 3. Changed the data type of 'Order Id' to text.
 4. Created a new calendar table comprising all dates between the earliest and latest 'Order Date'.
+5. Created measures and columns using Power query or DAX functions as and when required.
 
-### Analysis:
 
-I had broken down the analysis into finding answers to certain questions. Such questions and related analysis will unfold below.
-I have also given the steps followed or codes used to develop the related visualizations in Power BI.
+#### Q1. What is the trend of sales?
 
-### Q1. What is the trend of sales?
 
-![1  Sales Trend](https://github.com/user-attachments/assets/f84cb91f-72fc-4385-b0a9-2e6c2dfbda78)
-
-Findings:
-
-1. Total sales is around 8.5K. Value wise almost 74% consists of Clothing, 18% Ornaments and 7% Other. But quantity wise only 49% is Clothing, 31% Ornaments and 20% Other. Obviously, that Clothings are highly priced compared to Ornaments and Other.
-2. There is almost no diffrence in average sales volume over weekdays or weekends.
-3. Top selling months were May and July followed by December and March. However, June has the deepest slump between two high grossing months.
+![image](https://github.com/user-attachments/assets/3cd1cb6d-b7d8-4df7-9295-6244dc588a94)
 
 *DAX used:*
 
@@ -47,14 +56,16 @@ Findings:
 
 *3. % Change over Last Month = if ([Sales last Month]<>0, ([Total] - [Sales last Month]) / [Sales last Month] , 0)*
 
-### Q2. How are the performance of each product categories?
-
-![2  Product Category Performance](https://github.com/user-attachments/assets/c1416926-d2a7-4de9-bf3f-89fa906c5465)
-
 Findings:
 
-1. The sales trend is almost flat over months for each product category.
-2. Total sales follows the trend of sales as Clothing.
+1. Product category 'Clothing' is the main contributor to total revenue.
+2. Sales are consistent over weekdays or weekends and over months. 
+
+
+### Q2. How are the performance of each product categories?
+
+
+![image](https://github.com/user-attachments/assets/49016491-8d3e-41be-bd43-5a24f59eadfa)
 
 *DAX used:*
 
@@ -64,22 +75,26 @@ Findings:
     
 *2. % Change over Last Month = if ([Sales last Month]<>0, ([Total] - [Sales last Month]) / [Sales last Month] , 0)*
 
+Findings:
+
+1. The sales trend is almost flat over months for each product category.
+2. Total sales follows the trend of sales in Clothing.
+
+
 ### What is the impact of price on sales?
 
-![3  Price vs  Sales](https://github.com/user-attachments/assets/1c0a95a8-4c3b-4e0b-8f0a-7a36c2b01d8f)
+
+![image](https://github.com/user-attachments/assets/5ce724d1-7346-43ab-a29f-3460ad96cea8)
 
 Findings:
 
-1. In this Price vs. Sales graph, the quantity sold and sales volumn- both have a downward trend with the increase in prices. The consumers seem to be quite price sensitive. 
+1. Both sales volume and revenue go down with the increase in prices. The consumers are price sensitive. 
+
 
 ### What is the most popular product?
 
-![4  Product Popularity](https://github.com/user-attachments/assets/28ec02fb-bf86-4042-8424-6436668a95db)
 
-Findings:
-
-1. The product Clothing-BF1548 has highest amount of sales with medium price in the Clothing product category. It also has a medium average rating within its product category!
-2. The product category Other has obtained the highest average rating and the maximum percentage of 'Good' ratings, although, there is no significant difference in the ratings received across all categories.
+![image](https://github.com/user-attachments/assets/df4b7b0f-4b4a-4109-9699-26b0f16b9a17)
 
 *DAX used:*
 
@@ -89,78 +104,93 @@ Findings:
 
 *3. % Bad Rating = CALCULATE(DISTINCTCOUNT(Data[Order ID]),Data[Rating]<3)/DISTINCTCOUNT(Data[Order ID])*
 
+Findings:
+
+1. The product Clothing-BF1548 provides highest revenue with medium price in 'Clothing' category.
+2. The average ratings are around 3.5 across all product categories; ratings do not impact popularity.
+3. The product category 'Other' has obtained the highest average rating and the maximum percentage of 'Good' ratings.
+
+
 ### What is the total sales by order location?
 
-![5  Gross Sales by Order Location](https://github.com/user-attachments/assets/c05a9b68-9b59-49fb-bb95-8d85cbe2abdb)
+
+![image](https://github.com/user-attachments/assets/810f81fe-8e00-4210-9fdf-52ea8352f56a)
+
+![image](https://github.com/user-attachments/assets/8ee68e2b-cc9e-4314-a740-81216a030779)
 
 Findings:
 
-1. The city 'Sydney' provides the maximum revenue from sales in all product categories.
-   However, Sydney is an overseas location, hence steep amount of shipping charges is applicable, which actually contributes to this high revenue.
-   If we consider the net sales, which is the total revenue - Shipping Charges, the picture entirely changes. The inland cities now come out as leaders.
+1. Revenue from overseas locations are comparable to that from inland locations despite order volume being half of the same from within country.
+2. Consider net sales (deducting shipping charges from revenue) and the sales volume from international locations goes down to half the same from inland locations.
 
-![5  Net Sales by Order Location](https://github.com/user-attachments/assets/e6f6abb1-1dbb-4f71-8d41-059cbc623b0d)
 
 ### What is the impact of Shipping Charges on Sales?
 
-![image](https://github.com/user-attachments/assets/4f4b9383-692c-4bba-9be4-746dd162a477)
+
+![image](https://github.com/user-attachments/assets/ba25c4f3-4d8b-46e3-a3e9-479a8a375718)
+
+![image](https://github.com/user-attachments/assets/ee0b322c-d244-46a5-b368-b78cb5545d13)
 
 Findings:
 
-1. The revenue is hugely inflated by Shipping Charges, however the net sales drops to almost half when shipping charges are deducted.
+1. The price and consequently revenue are hugely inflated by Shipping Charges. The international customers pay almost double the price for same product.
+2. The product catogory 'Other' has the stippest Shipping Charges, between 90% to 70% of the sales price depending on the overseas distance. This is followed by 'Ornaments'- almost 80% to 50% and 'Clothing'- 53% to 22% of sales prices.
 
-![6  Shipping Charges vs  Sales](https://github.com/user-attachments/assets/42dc2b52-c1ec-4486-b575-c1d58871001d)
-
-2. The basket value, which is the average sales per order, is higher in all product categories for overseas locations. This can be attributed to two things: i> high shipping charges which inflates the gross sales value by inflating the sales prices and ii> comparatively low number of orders from overseas locations.
-3. The impact of shipping charges on sales is evidently clear from the Proportion of Gross and Net Sale w.r.t. International Shipping visual. We see the proportion of Gross Sales for inland and overseas sales is 55%:45%. Whereas, this proportion changes to 70%:30% when considered the net sales only.
-4. From the last visual of Sales and Shipping Charges across international Locations, we find the 'Other' product catogory has the stippest Shipping Charges, as high as 90% to minimum 70% of the sales price depending on the overseas distance.
-   This is followed by 'Ornaments'- almost 80% to 50% of sales prices and 'Clothing'- 53% to 22%.
-   However, despite this humongous shipping charges, Sydney provides the highest revenue from sales. Sydney seems to hold quite a significant fan base for our Mr. Lee Chatmen!
 
 ### What is the demographic profile of the buyers?
 
-![7  Demographic Profile of Buyers](https://github.com/user-attachments/assets/5e64bdd2-a21e-417a-b236-24032b34b408)
+
+![image](https://github.com/user-attachments/assets/98acb7f6-d45d-4867-89a8-449f3a7ea384)
 
 Findings:
 
-1. The buyers are all youths, mostly falling in 20-34 age groups. Men are the primary buyers across all age groups.
+1. The buyers are all youths, mostly falling in 20-34 age groups. Men are the primary buyers across all age groups and locations.
+
 
 ### How do ratings and reviews correlate with sales?
 
+
 ![8  Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/e55cd6b3-3df7-4f0e-bd10-3f10fea319a9)
+
+![8a  Clothing_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/7b51532a-11c3-4695-a04d-6e7f1cf96ac8)
+
+![8b  Ornaments_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/636d2a13-48c3-44d3-b4f3-5e3ea248605a)
+
+![8c  Other_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/c3ea77cd-3d89-4387-844a-b11c5e43b7b1)
+
+*The WordCloud images and sentiment analysis are done using Python. The Python file is attached with this analysis.*
 
 Findings:
 
-1. The average sales is more or less same across ratings.
-2. I have drawn a line chart of the average sales each month and the average ratings received till that month. However, as we see there is not much impact of ratings received on sales and this is trus for all product categories.
-
-![8a  Clothing_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/7b51532a-11c3-4695-a04d-6e7f1cf96ac8)
-![8b  Ornaments_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/636d2a13-48c3-44d3-b4f3-5e3ea248605a)
-![8c  Other_Ratings and Reviews vs  Sales](https://github.com/user-attachments/assets/c3ea77cd-3d89-4387-844a-b11c5e43b7b1)
-
-3. Below are the WordCloud images of the customer reviews for the product category and international shipping yes/no combinations.
-4. Product category 'Clothing' and 'Ornaments' feature more negative words like 'delay' and 'lack'. Whereas, product category 'Other' shows some good words like 'major positives','excellent quality','great design', 'delivered quickly' etc. This also corroborates with the highest %age of 'Good' rating this product category received over other product categories.
+1. The average sales is almost same across ratings.
+2. I have drawn a line chart of the average sales each month and the average ratings received till that month. However, as we see there is not much impact of ratings received on sales and this is true for all product categories.
 
 ![WordCloudImage_removing delivery team and greatly appreciated](https://github.com/user-attachments/assets/d69f0157-7b86-4530-a85c-eff3dc39330b)
 
-5. The sentiment analysis of the review comments reveal the mean polarity values of all product categories range between 0.15 to 0.2, which indicates sentiments being slightly positive, however not very optimistic. 
+3. Product category 'Clothing' and 'Ornaments' feature more negative words like 'delay' and 'lack'. Whereas, product category 'Other' shows some good words like 'major positives','excellent quality','great design', 'delivered quickly' etc. This also corroborates with the highest %age of 'Good' rating product category 'Other' received over other product categories.
 
 ![image](https://github.com/user-attachments/assets/e7e6711d-e299-42a2-9ae1-b5af833d63b7)
 
+4. The sentiment analysis of the review comments reveal the mean polarity values of all product categories range between 0.15 to 0.2, which indicates sentiments being slightly positive, however not very optimistic. 
+
+
 ### What are the trends in shipping charges?
 
+
 ![9  Trend in Shipping Charges](https://github.com/user-attachments/assets/f85e4de5-485f-470e-b35e-e545965227e8)
-
-Findings:
-
-1. Shipping Charges are same for all product categories for a particular overseas location.
-2. The trend in sales and shipping charges over months are more or less flat.
 
 *DAX used:*
 
 *1. International Sales = CALCULATE(sum(Data[Total Sales]),Data[International Shipping]="Yes")*
 
+Findings:
+
+1. Shipping Charges are same for all product categories for a particular overseas location.
+2. Total shipping charges across locations remained flat over months.
+
+
 ### Are there any patterns in repeat purchases?
+
 
 ![10  Repeat Purchase](https://github.com/user-attachments/assets/617c71e5-9fcd-4470-98aa-d2a34b7908ee)
 
@@ -168,13 +198,17 @@ Findings:
 
 *1. Order frequency per week = (DISTINCTCOUNT(Data[Order ID])/(MAX(Data[Order Date]) - MIN(Data[Order Date])))*7*
 
+
 ### Key Influencers:
+
 
 ![image](https://github.com/user-attachments/assets/de55139f-c801-4e57-9004-9e4033147d62)
 ![image](https://github.com/user-attachments/assets/52a7c7fe-fd15-4d4c-a1e3-70d25d219ac0)
 ![image](https://github.com/user-attachments/assets/9807023f-9199-4966-bfd4-a26270e4573e)
 
+
 ### Decomposition Tree:
+
 
 ![image](https://github.com/user-attachments/assets/0d06ab55-ee45-403d-b79b-a70ecd6cbc17)
 
